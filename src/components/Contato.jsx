@@ -5,8 +5,8 @@ import whatsAppIcon from "../assets/whatsapp.png";
 
 const Contato = () => {
   return (
-    <section id="Contato" className="py-[5rem] bg-zinc-900 flex items-center flex-col">
-      <h2 className="mt-10 text-4xl font-semibold text-slate-200">
+    <section className="bg-zinc-900 flex justify-center items-center flex-col min-h-dvh">
+      <h2 className="text-4xl font-semibold text-slate-200">
         Entre em Contato
       </h2>
       <ul className="my-[10rem] max-w-[50rem] flex flex-wrap justify-center gap-10">

@@ -4,7 +4,7 @@ import gmailIcon from "../assets/gmail.png";
 
 const Hero = () => {
   return (
-    <section className="text-slate-200 bg-zinc-900 flex justify-center gap-[18rem] items-center min-h-screen px-4">
+    <section className="text-slate-200 bg-zinc-900 flex justify-center gap-[18rem] items-center min-h-screen">
       <div className="w-[30rem]">
         <h1 className="text-2xl leading-snug">
           Olá, eu sou

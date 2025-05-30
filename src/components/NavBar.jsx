@@ -1,29 +1,64 @@
 import React from "react";
+import { Link } from "react-scroll";
+
+const activeClass = "[&>div]:w-full";
+const itemsClass = "text-xl w-full text-neutral-200 cursor-pointer relative";
 
 const NavBar = () => {
-  const itemsClass = "text-xl text-neutral-200";
   return (
-    <nav>
+    <nav className="fixed top-0 left-0">
       <ul className="w-full h-16 fixed flex items-center justify-center bg-zinc-800 gap-20">
         <li>
-          <a className={itemsClass} href="#Sobre">
+          <Link
+            to="sobre"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={itemsClass}
+          >
             Sobre
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={itemsClass} href="#Projetos">
-            Projetos
-          </a>
+          <Link
+            to="projetos"
+            spy={true}
+            offset={-20}
+            smooth={true}
+            duration={500}
+            className={itemsClass}
+          >
+            <a className={itemsClass} href="#projetos">
+              Projetos
+            </a>
+          </Link>
         </li>
         <li>
-          <a className={itemsClass} href="#Tecnologias">
-            Tecnologias
-          </a>
+          <Link
+            to="tecnologias"
+            spy={true}
+            offset={-20}
+            smooth={true}
+            duration={500}
+            className={itemsClass}
+          >
+            <a className={itemsClass} href="#tecnologias">
+              Tecnologias
+            </a>
+          </Link>
         </li>
         <li>
-          <a className={itemsClass} href="#Contato">
-            Contato
-          </a>
+          <Link
+            to="contato"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={itemsClass}
+          >
+            <a className={itemsClass} href="#contato">
+              Contato
+            </a>
+          </Link>
         </li>
       </ul>
     </nav>
