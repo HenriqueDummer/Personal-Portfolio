@@ -5,6 +5,7 @@ import Tecnologias from "./components/Tecnologias";
 import Contato from "./components/Contato";
 import NavBar from "./components/NavBar";
 import { Element } from "react-scroll";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Contato />
         </Element>
       </main>
+      <Analytics />
     </>
   );
 }
