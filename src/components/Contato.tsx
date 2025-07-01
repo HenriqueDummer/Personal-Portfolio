@@ -8,8 +8,6 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 
-const liStyle = "flex items-center gap-4 font-extrathin";
-
 const Contato = () => {
   return (
     <section className="flex justify-center items-center flex-col pb-[10rem] min-h-dvh">
