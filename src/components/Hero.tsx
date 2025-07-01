@@ -1,24 +1,28 @@
-import React from "react";
 import heroImg from "../assets/hero.png";
 import gmailIcon from "../assets/gmail.png";
 import linkedinIcon from "../assets/linkedIn.png";
 import githubIcon from "../assets/github.png";
-import { Link } from "react-scroll";
+import { TypingText } from "./animate-ui/text/typing";
+import { MotionEffect } from "./animate-ui/effects/motion-effect";
+import { HighlightText } from "./animate-ui/text/highlight";
 
 const Hero = () => {
   return (
-    <section className="text-slate-200 bg-dark-bg flex justify-center items-center min-h-screen px-10">
+    <section className="text-slate-200 w-full flex justify-center items-center min-h-screen">
       <div className="w-[30rem]">
         <h1 className="text-3xl leading-snug text-primary-font font-light">
           <span className="text-4xl">👋</span>
-         Olá, eu sou
+          Olá, eu sou
           <br />
-          <span className="font-bold text-primary text-[44px]">
-            Henrique Dummer
-          </span>
+          <TypingText
+            className="font-bold text-highlight text-[44px]"
+            text="Henrique Dummer"
+            cursor={true}
+          />
         </h1>
         <p className="text-primary-font font-light text-lg mt-2">
-          Um desenvolvedor <span className="text-primary font-semibold">front-end</span> que adora encarar novos desafios e aprender novas tecnologias
+          Um desenvolvedor <HighlightText className="font-semibold" delay={1300} text="front-end" /> {" "}
+          que adora encarar novos desafios e aprender novas tecnologias
         </p>
         <ul className="flex gap-1 items-center">
           <li>
@@ -27,7 +31,10 @@ const Hero = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/henrique-dummer-725a1a239/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/henrique-dummer-725a1a239/"
+              target="_blank"
+            >
               <img src={linkedinIcon} alt="github icon" />
             </a>
           </li>
@@ -38,9 +45,9 @@ const Hero = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <MotionEffect slide={{ direction: "left" }} fade={true} zoom={true}>
         <img className="w-[40rem] rounded-2xl" src={heroImg} alt="" />
-      </div>
+      </MotionEffect>
     </section>
   );
 };
