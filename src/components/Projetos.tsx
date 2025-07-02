@@ -59,7 +59,7 @@ para cada status de leitura, proporcionando uma experiência organizada e amigá
           title="Movie website"
           techIcons={["react", "sass", "git", "reactquery"]}
           img={ProjectMovies}
-          link="https://netflix-clone-green.vercel.app"
+          link="https://netflix-clone-ten-fawn-52.vercel.app"
           linkGithub="https://github.com/HenriqueDummer/Netflix-Clone"
         />
       </ul>
